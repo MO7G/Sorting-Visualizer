@@ -1,0 +1,7 @@
+<div>
+                    <div className="benchMark" id="benchMarkDual">
+                        {this.state.numberOfArrays.map((element, index) => <BenchMark onOperation={this.helper} key={this.getKey()} id={element} ref={this.benchMarkChild.current[index]} {...this.state} info={this.sortingInfo}>
+                            {this.benchMarkChild.current = Array(this.state.numberOfArrays.length).fill().map((_, i) => this.benchMarkChild.current[i] || React.createRef())}
+                        </BenchMark>)}
+                    </div>
+                </div>

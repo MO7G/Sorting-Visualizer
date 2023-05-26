@@ -1,0 +1,207 @@
+:root {
+  --width: 1px;
+  --margin: 1px;
+  --mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+*{
+ padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+
+}
+
+.myBody{
+  height:100vh;
+  background-color: #fffafa;
+  color: black;
+}
+#dark .myBody{
+background-color: black;
+color: white;
+}
+.custom-button{
+  color: white;
+  background-color: green;
+  border-radius: 8px;
+}
+
+.sortingContainer{
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.fatherContainerDual{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sortingContainer{
+
+}
+.theContainer{
+text-align: center;
+}
+.theContainerChild{
+
+}
+
+.theBar{
+    width: var(--width);
+background-color: #191825;
+    margin: var(--margin);
+    display: inline-block;
+    border-radius:5px;
+  
+}
+
+#dark .theBar{
+ background-color: #6F1AB6;
+}
+
+.theBar-2{
+    width: var(--width);
+    background-color: blue;
+    margin: var(--margin);
+    display: inline-block;
+    border-radius:5px;
+    
+
+}
+
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.me-auto{
+   width: 100%;
+   height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+@media only screen and (min-width: 992px) {
+   .rangeSlider{
+    pointer-events: auto;
+     width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: .4s;
+  border-radius: 5px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 0.1em;
+  border-radius: 0px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+}
+
+input:checked + .slider:before {
+  transform: translateX(2.8em) rotate(360deg);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

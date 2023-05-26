@@ -1,0 +1,35 @@
+Program-> Header Block .
+Header -> Program identifier ;
+Block ->  begin Statement | epsilon
+Statement ->read xx
+ identifier| write identifier | XX | XX | XXXX 
+
+temporarily the statemenet will be the following 
+
+Statement -> read .
+
+
+
+
+
+
+ConstContinue-> ConstContinue’
+ConstContinue -> Assignment_st ,ConstContinue ‘|
+
+DeclareSec-> DeclareSec’
+DeclareSec’ -> Decleration ,DeclareSec’|
+
+Statements -> Statements’
+Statements’ -> Statement NewLine , Statements’ |
+
+PrintList -> PrintList’int
+PrintList -> PrintItem,PrintList’ |
+
+ReadList -> ReadList’
+ReadList’ -> Identifier, ReadList’ |
+
+ElseIfSec -> ElseIfSec’
+ElseIfSec -> ElseIfStatement,ElseIfSec’ |
+
+Expression -> Expression’,Term | Expression’,Expression
+Expression -> AddOpTerms,Expression’ |
