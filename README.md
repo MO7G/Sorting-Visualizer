@@ -32,4 +32,4 @@ Contributions to the Sorting Algorithm Visualizer are welcome! If you have ideas
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the [MIT License](LICENSE).
